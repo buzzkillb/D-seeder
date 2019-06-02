@@ -408,6 +408,8 @@ extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
     db.Add(CService("110.232.118.107", 33369), true);
     db.Add(CService("61.69.78.78", 33339), true);
+    db.Add(CService("61.69.78.78", 33338), true);
+    db.Add(CService("61.69.78.78", 9999), true);
     db.Add(CService("103.43.119.203", 9999), true);
   }
   do {
