@@ -19,6 +19,18 @@ REQUIREMENTS
 
 $ sudo apt-get install build-essential libboost-all-dev libssl-dev
 
+Free he.net is easy for DNS setup, run dnsseed binary for this to show up on dns propagation lists.  
+```
+dnsseed.denarius.guide.	86400	IN	NS	seeder.denarius.guide.
+seeder.denarius.guide.	86400	IN	A	<YourIPv4ofVPS>
+```
+
+How to turn off system resolve in Bionic  
+```
+sudo systemctl disable systemd-resolved.service
+sudo service systemd-resolved stop
+```
+
 USAGE
 -----
 
