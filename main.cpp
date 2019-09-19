@@ -406,6 +406,16 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
+    db.Add(CService("hrzdbqp4vjbohsvg.onion", 33369), true);
+    db.Add(CService("cskbfi7xbwiaibhx.onion", 33369), true);
+    db.Add(CService("jchgidxa4pvafibf.onion", 33369), true);
+    db.Add(CService("hmm45fctx4ppkk5l.onion", 33369), true);
+    db.Add(CService("hmm45fctx4ppkk5l.onion", 9999), true);
+    db.Add(CService("cj5knilnxwfqitpy.onion", 33369), true);
+    db.Add(CService("eswww2xemevsaioa.onion", 33369), true);
+    db.Add(CService("ps4diln7wueoktzv.onion", 33369), true);
+    db.Add(CService("srjaq4ycos3pmzbj.onion", 33369), true);
+    db.Add(CService("imhj6feodf6tuuf4.onion", 33369), true);  
     db.Add(CService("110.232.118.107", 33369), true);
     db.Add(CService("103.43.119.203", 9999), true);
     db.Add(CService("51.15.52.235", 33369), true);
