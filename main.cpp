@@ -400,23 +400,30 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"dnsseed.hashbag.cc", "seed.denarius.host", "syd.hashbag.cc", ""};
+static const string mainnet_seeds[] = {"dnsseed.denarius.guide", "bseed.denarius.guide", "mseed.denarius.guide", ""};
 static const string testnet_seeds[] = {"testnet-dnsseed.hashbag.cc", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
     db.Add(CService("110.232.118.107", 33369), true);
-    db.Add(CService("61.69.78.78", 33339), true);
-    db.Add(CService("61.69.78.78", 33338), true);
-    db.Add(CService("61.69.78.78", 9999), true);
     db.Add(CService("103.43.119.203", 9999), true);
     db.Add(CService("51.15.52.235", 33369), true);
     db.Add(CService("163.172.157.116", 33369), true);
     db.Add(CService("110.232.118.107", 33369), true);
     db.Add(CService("51.83.83.216", 33369), true);
     db.Add(CService("83.221.211.116", 33369), true);
-    db.Add(CService("79.70.245.229", 33369), true);
+    db.Add(CService("104.169.32.59", 33369), true);
+    db.Add(CService("116.203.60.24", 33369), true);
+    db.Add(CService("135.84.222.69", 33369), true);
+    db.Add(CService("140.82.13.39", 33369), true);
+    db.Add(CService("140.82.6.2", 33369), true);
+    db.Add(CService("140.82.60.123", 33369), true);
+    db.Add(CService("144.202.88.214", 33369), true);
+    db.Add(CService("149.248.19.9", 33369), true);
+    db.Add(CService("149.28.51.135", 33369), true);
+    db.Add(CService("157.245.45.74", 33369), true);
+    db.Add(CService("164.68.111.49", 33369), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
