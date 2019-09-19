@@ -424,7 +424,7 @@ extern "C" void* ThreadSeeder(void*) {
     db.Add(CService("149.28.51.135", 33369), true);
     db.Add(CService("157.245.45.74", 33369), true);
     db.Add(CService("164.68.111.49", 33369), true);
-    db.Add(Cservice("[2001:bc8:47a0:1933::1]", 33369), true);
+    db.Add(CService("[2001:bc8:47a0:1933::1]", 33369), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
