@@ -416,6 +416,9 @@ extern "C" void* ThreadSeeder(void*) {
     db.Add(CService("ps4diln7wueoktzv.onion", 33369), true);
     db.Add(CService("srjaq4ycos3pmzbj.onion", 33369), true);
     db.Add(CService("imhj6feodf6tuuf4.onion", 33369), true);
+    db.Add(CService("81.174.165.244", 33369), true);
+    db.Add(CService("92.42.11.89", 33369), true);
+    db.Add(CService("73.218.220.108", 33369), true);
     db.Add(CService("51.83.83.216", 33369), true);
     db.Add(CService("94.5.235.236", 33369), true);
     db.Add(CService("94.16.119.1", 9999), true);
