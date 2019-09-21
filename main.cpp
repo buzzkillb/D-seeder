@@ -406,49 +406,9 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("up5vfc4ps5ccux6d.onion", 33369), true);
-    db.Add(CService("3oyxzstvb6p5rglb.onion", 33369), true);
-    db.Add(CService("hrzdbqp4vjbohsvg.onion", 33369), true);
-    db.Add(CService("cskbfi7xbwiaibhx.onion", 33369), true);
-    db.Add(CService("jchgidxa4pvafibf.onion", 33369), true);
-    db.Add(CService("hmm45fctx4ppkk5l.onion", 33369), true);
-    db.Add(CService("hmm45fctx4ppkk5l.onion", 9999), true);
-    db.Add(CService("cj5knilnxwfqitpy.onion", 33369), true);
-    db.Add(CService("eswww2xemevsaioa.onion", 33369), true);
-    db.Add(CService("ps4diln7wueoktzv.onion", 33369), true);
-    db.Add(CService("srjaq4ycos3pmzbj.onion", 33369), true);
-    db.Add(CService("imhj6feodf6tuuf4.onion", 33369), true);
-    db.Add(CService("81.174.165.244", 33369), true);
-    db.Add(CService("92.42.11.89", 33369), true);
-    db.Add(CService("73.218.220.108", 33369), true);
-    db.Add(CService("51.83.83.216", 33369), true);
-    db.Add(CService("94.5.235.236", 33369), true);
-    db.Add(CService("94.16.119.1", 9999), true);
-    db.Add(CService("149.28.206.220", 9999), true);
-    db.Add(CService("108.61.188.120", 9999), true);
-    db.Add(CService("54.37.67.210", 9999), true);
-    db.Add(CService("95.179.169.236", 9999), true);
-    db.Add(CService("45.77.227.101", 9999), true);
-    db.Add(CService("185.206.145.153", 9999), true);
-    db.Add(CService("110.232.118.107", 33369), true);
-    db.Add(CService("103.43.119.203", 9999), true);
+    db.Add(CService("51.15.210.145", 33369), true);
     db.Add(CService("51.15.52.235", 33369), true);
     db.Add(CService("163.172.157.116", 33369), true);
-    db.Add(CService("110.232.118.107", 33369), true);
-    db.Add(CService("51.83.83.216", 33369), true);
-    db.Add(CService("83.221.211.116", 33369), true);
-    db.Add(CService("104.169.32.59", 33369), true);
-    db.Add(CService("116.203.60.24", 33369), true);
-    db.Add(CService("135.84.222.69", 33369), true);
-    db.Add(CService("140.82.13.39", 33369), true);
-    db.Add(CService("140.82.6.2", 33369), true);
-    db.Add(CService("140.82.60.123", 33369), true);
-    db.Add(CService("144.202.88.214", 33369), true);
-    db.Add(CService("149.248.19.9", 33369), true);
-    db.Add(CService("149.28.51.135", 33369), true);
-    db.Add(CService("157.245.45.74", 33369), true);
-    db.Add(CService("164.68.111.49", 33369), true);
-    db.Add(CService("[2001:bc8:47a0:1933::1]", 33369), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
