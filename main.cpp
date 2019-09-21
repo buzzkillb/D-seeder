@@ -400,7 +400,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"dnsseed.denarius.guide", "bseed.denarius.guide", "mseed.denarius.guide", ""};
+static const string mainnet_seeds[] = {"dnsseed.denarius.guide", "bseed.denarius.guide", "dseed.denarius.guide", "mseed.denarius.guide", ""};
 static const string testnet_seeds[] = {"testnet-dnsseed.hashbag.cc", ""};
 static const string *seeds = mainnet_seeds;
 
